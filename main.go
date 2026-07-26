@@ -7,10 +7,8 @@ func main() {
 }
 
 func chip() {
-	robot := `        ▛▀▀▀▀▀▀▀▀▀▀▀▜
-        ▌  ◉     ◉  ▐
-        ▌     ◡     ▐
-        ▙▄▄▄▄▄▄▄▄▄▄▄▟
-`
-	fmt.Print(robot)
+	fmt.Println("        ▛▀▀▀▀▀▀▀▀▀▀▀▜")
+	fmt.Println("        ▌  ◉     ◉  ▐")
+	fmt.Println("        ▌     ◡     ▐")
+	fmt.Println("        ▙▄▄▄▄▄▄▄▄▄▄▄▟")
 }
