@@ -7,11 +7,10 @@ func main() {
 }
 
 func chip() {
-	    rebot := `
-	 ▛▀▀▀▀▀▀▀▀▀▀▀▜")
-	 ▌  ◉     ◉  ▐")
-	 ▌     ◡     ▐")
-	 ▙▄▄▄▄▄▄▄▄▄▄▄▟")
+	robot := `        ▛▀▀▀▀▀▀▀▀▀▀▀▜
+        ▌  ◉     ◉  ▐
+        ▌     ◡     ▐
+        ▙▄▄▄▄▄▄▄▄▄▄▄▟
 `
-fmt.Println(rebot)
+	fmt.Print(robot)
 }
