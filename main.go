@@ -7,8 +7,11 @@ func main() {
 }
 
 func chip() {
-	fmt.Println("   +-----------+")
-	fmt.Println("   |  O     O  |")
-	fmt.Println("   |     -     |")
-	fmt.Println("   +-----------+")
+	    rebot := `
+	 ▛▀▀▀▀▀▀▀▀▀▀▀▜
+	 ▌  ◉     ◉  ▐
+	 ▌     ◡     ▐
+	 ▙▄▄▄▄▄▄▄▄▄▄▄▟
+`
+fmt.Println(rebot)
 }
