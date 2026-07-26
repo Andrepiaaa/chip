@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	// Mostrar Chip feliz por defecto
 	fmt.Println(ChipFace("feliz"))
+	fmt.Println()
+	fmt.Println(ChipBlock())
+	fmt.Println()
+	fmt.Println(ChipHeader("feliz"))
 }

@@ -36,3 +36,26 @@ func ChipFace(emotion string) string {
 		return ChipFace("feliz")
 	}
 }
+
+// ChipBlock devuelve las letras CHIP en bloque, SIN padding
+func ChipBlock() string {
+	return Yellow + "█████  ██ ██  █████  █████" + Reset + "\n" +
+		Yellow + "██     █████   ██    ██ ██" + Reset + "\n" +
+		Yellow + "██     █████   ██    █████" + Reset + "\n" +
+		Yellow + "█████  ██ ██  █████  ██   " + Reset
+}
+
+// ChipHeader devuelve la cara de Chip + letras CHIP lado a lado
+func ChipHeader(emotion string) string {
+	const gap = "  "
+	// Cada línea: pad + cara + gap + bloque
+	switch emotion {
+	case "feliz":
+		return Yellow + pad + "▛▀▀▀▀▀▀▀▀▀▀▀▜" + gap + "█████  ██ ██  █████  █████" + Reset + "\n" +
+			Yellow + pad + "▌  ◉     ◉  ▐" + gap + "██     █████   ██    ██ ██" + Reset + "\n" +
+			Yellow + pad + "▌     ◡     ▐" + gap + "██     █████   ██    █████" + Reset + "\n" +
+			Yellow + pad + "▙▄▄▄▄▄▄▄▄▄▄▄▟" + gap + "█████  ██ ██  █████  ██   " + Reset
+	default:
+		return ChipHeader("feliz")
+	}
+}
