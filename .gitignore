@@ -1,0 +1,6 @@
+# Binario compilado
+chip
+
+# Entorno
+.env
+*.local
